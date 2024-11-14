@@ -44,10 +44,10 @@ class LoginPage extends StatelessWidget {
             ),
           ),
         ),
-        Expanded(
+        const Expanded(
           flex: 1,
           // child: _buildImageSection(height: 750), // 600 pixels for web
-          child: const ImageSection(
+          child: ImageSection(
             height: 750,
             imagePath: 'assets/images/hotel.jpg',
           ),

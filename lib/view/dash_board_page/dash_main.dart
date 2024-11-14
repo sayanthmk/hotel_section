@@ -1,7 +1,7 @@
 // dashboard.dart
 import 'package:flutter/material.dart';
-import 'package:hotel_admin/view/dash_board_page/dash_mobile.dart';
-import 'package:hotel_admin/view/dash_board_page/dash_web.dart';
+import 'package:hotel_admin/view/dash_board_page/dashboard_mobile/dash_mobile.dart';
+import 'package:hotel_admin/view/dash_board_page/dashboard_web/dash_web.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});
@@ -15,7 +15,7 @@ class Dashboard extends StatelessWidget {
           if (constraints.maxWidth < 600) {
             return const MobileDashboard();
           } else {
-            return WebDashboard();
+            return const WebDashboard();
           }
         },
       ),

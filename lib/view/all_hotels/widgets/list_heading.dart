@@ -34,7 +34,7 @@ class HotelListHeading extends StatelessWidget {
           Expanded(
               flex: 2,
               child: Text(
-                'Location',
+                'Contact Number',
                 style: TextStyle(fontWeight: FontWeight.bold),
               )),
           Expanded(

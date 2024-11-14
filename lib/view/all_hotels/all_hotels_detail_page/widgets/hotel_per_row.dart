@@ -11,9 +11,7 @@ class HotelsPermissionHeaderSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // Hotel ID Section
         Container(
-          // padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
           decoration: BoxDecoration(
             color: Colors.blue.shade50,
             borderRadius: BorderRadius.circular(8),
@@ -45,7 +43,6 @@ class HotelsPermissionHeaderSection extends StatelessWidget {
             ),
           ),
         ),
-
         const SizedBox(height: 16),
       ],
     );

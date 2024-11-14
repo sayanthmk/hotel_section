@@ -166,11 +166,10 @@ class PermissionsWebSection extends StatelessWidget {
                             Expanded(
                                 flex: 2,
                                 child:
-                                    Text('${hotel.country}, ${hotel.state}')),
+                                    Text(' ${hotel.state},${hotel.country}')),
                             Expanded(
                                 flex: 2,
-                                child:
-                                    Text('${hotel.country}, ${hotel.state}')),
+                                child: Text('${hotel.contactNumber} ')),
                             const Expanded(
                               flex: 2,
                               child: CustomHotelStatusChip(status: 'available'),
