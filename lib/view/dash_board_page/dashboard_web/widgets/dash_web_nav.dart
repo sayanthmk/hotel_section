@@ -21,7 +21,7 @@ class DashWebNavBar extends StatelessWidget {
             children: [
               SizedBox(width: 8),
               Text(
-                'Hotel Logo',
+                '',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -34,9 +34,9 @@ class DashWebNavBar extends StatelessWidget {
           Row(
             children: [
               NavItem(title: 'Home', isActive: true),
-              NavItem(title: 'About', isActive: false),
-              NavItem(title: 'Newsletter', isActive: false),
-              NavItem(title: 'Rooms', isActive: false),
+              NavItem(title: 'Overview', isActive: false),
+              NavItem(title: 'Analytics', isActive: false),
+              NavItem(title: ' Mangement', isActive: false),
               NavItem(title: 'Services', isActive: false),
               NavItem(title: 'Pricing', isActive: false),
             ],

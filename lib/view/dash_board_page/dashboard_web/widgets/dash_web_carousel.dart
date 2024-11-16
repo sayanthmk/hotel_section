@@ -7,18 +7,15 @@ class DashWebCarouselSection extends StatelessWidget {
     'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
     'https://images.unsplash.com/photo-1529290130-4ca3753253ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
   ];
-  // final List<String> carouselImages;
 
   DashWebCarouselSection({
     super.key,
-    // required this.carouselImages,
   });
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Carousel Slider
         CarouselSlider(
           options: CarouselOptions(
             height: MediaQuery.of(context).size.height * 0.6,
@@ -43,7 +40,7 @@ class DashWebCarouselSection extends StatelessWidget {
           }).toList(),
         ),
 
-        // Overlay with Text
+        // overlay text
         Positioned.fill(
           child: Container(
             alignment: Alignment.center,

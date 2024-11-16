@@ -29,7 +29,7 @@ class MobileHotelGrid extends StatelessWidget {
                 location: 'Location ${index + 1}',
                 rating: 4.5,
                 price: 200.0 + (index * 50), // Example price variation
-                imageUrl: 'https://picsum.photos/200/300?random=${index}',
+                imageUrl: 'https://picsum.photos/200/300?random=$index',
               );
             },
           ),

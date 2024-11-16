@@ -22,7 +22,7 @@ class DrawerSample extends StatelessWidget {
             drawer: isSmallScreen ? const CustomDrawerWidget() : null,
             appBar: isSmallScreen
                 ? AppBar(
-                    title: const Text("Redsons Hotel"),
+                    iconTheme: const IconThemeData(color: Colors.white),
                     backgroundColor: Colors.blue,
                     centerTitle: true,
                   )

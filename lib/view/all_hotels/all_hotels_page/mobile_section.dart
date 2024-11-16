@@ -42,9 +42,7 @@ class AllhotelsMobileSection extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 24),
-
             const SizedBox(height: 24),
-
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -55,56 +53,40 @@ class AllhotelsMobileSection extends StatelessWidget {
                     SortButton(
                       text: "All Hotels",
                       isActive: true,
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Available",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Occupied",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Maintenance",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                // buildFilterButtons(),
                 CustomFilterButtons(
-                  onSelectDatePressed: () {
-                    // Handle the Select Date action
-                  },
-                  onFiltersPressed: () {
-                    // Handle the Filters action
-                  },
+                  onSelectDatePressed: () {},
+                  onFiltersPressed: () {},
                 ),
               ],
             ),
             const SizedBox(height: 24),
-            // _buildMobileContent(context),
-
             ListView.separated(
               shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
+              // physics: const ClampingScrollPhysics(),
               itemCount: hotels.length,
               separatorBuilder: (context, index) => const SizedBox(height: 8),
               itemBuilder: (context, index) {
                 HotelModel hotel = hotels[index];
-                // return _buildMobileHotelItem(context, hotel);
                 return Card(
                   elevation: 2,
                   shape: RoundedRectangleBorder(
@@ -117,7 +99,6 @@ class AllhotelsMobileSection extends StatelessWidget {
                     subtitle: Text('${hotel.hotelType} - ${hotel.country}'),
                     trailing: IconButton(
                       icon: const Icon(Icons.arrow_forward_ios, size: 18),
-                      // onPressed: () => navigateToHotelDetails(context, hotel),
                       onPressed: () {
                         Navigator.push(
                           context,

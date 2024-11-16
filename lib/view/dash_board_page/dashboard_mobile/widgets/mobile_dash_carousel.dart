@@ -34,7 +34,7 @@ class DashMobileCarousel extends StatelessWidget {
                   color: Colors.black.withOpacity(0.4),
                   padding: const EdgeInsets.all(8.0),
                   child: const Text(
-                    'Carousel Slide',
+                    'Book The Hotels',
                     style: TextStyle(fontSize: 24, color: Colors.white),
                   ),
                 ),

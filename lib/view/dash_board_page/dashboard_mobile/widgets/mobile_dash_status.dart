@@ -5,10 +5,10 @@ class DashMobileQuickStats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
       child: Column(
-        children: const [
+        children: [
           StatCard(title: 'Total Hotels', value: '120', icon: Icons.hotel),
           SizedBox(height: 8),
           StatCard(

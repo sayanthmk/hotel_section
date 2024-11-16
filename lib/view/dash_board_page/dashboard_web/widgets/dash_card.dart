@@ -11,23 +11,12 @@ class DashWebHotelManagement extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text(
+                Text(
                   'Hotel Management',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                ElevatedButton.icon(
-                  onPressed: () {
-                    // Handle adding a new hotel
-                  },
-                  icon: const Icon(Icons.add),
-                  label: const Text('Add Hotel'),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.blue,
-                    foregroundColor: Colors.white,
-                  ),
                 ),
               ],
             ),
@@ -39,7 +28,7 @@ class DashWebHotelManagement extends StatelessWidget {
                 crossAxisCount: 4,
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
-                childAspectRatio: 0.8,
+                childAspectRatio: 1.2,
               ),
               itemCount: 8,
               itemBuilder: (context, index) {

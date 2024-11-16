@@ -43,13 +43,14 @@ class DrawerHeaderWidget extends StatelessWidget {
                 ),
               ],
             ),
-            child: Center(
-              child: Image.asset(
-                logoPath,
-                width: 40,
-                height: 40,
-                fit: BoxFit.contain,
-              ),
+            child: const Center(
+              child: Icon(Icons.abc),
+              // child: Image.asset(
+              //   logoPath,
+              //   width: 40,
+              //   height: 40,
+              //   fit: BoxFit.contain,
+              // ),
             ),
           ),
           const SizedBox(width: 15),

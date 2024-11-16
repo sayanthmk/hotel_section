@@ -28,10 +28,12 @@ class DashWebAnalyticsOverview extends StatelessWidget {
                 child: Column(
                   children: [
                     Card(
+                      color: Colors.white,
                       child: SizedBox(
                         height: 300,
                         child: LineChart(
                           LineChartData(
+                            backgroundColor: Colors.white,
                             gridData: const FlGridData(show: true),
                             titlesData: FlTitlesData(
                               bottomTitles: AxisTitles(
