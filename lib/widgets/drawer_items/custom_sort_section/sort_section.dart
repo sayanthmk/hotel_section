@@ -71,7 +71,7 @@ class CustomSortSection extends StatelessWidget {
                       ),
                       Text(
                         "Select Date",
-                        style: const TextStyle(color: Colors.black),
+                        style:  TextStyle(color: Colors.black),
                       ),
                     ],
                   ),
@@ -120,13 +120,13 @@ class CustomButton extends StatelessWidget {
   final Color color;
 
   const CustomButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onTap,
-    this.widthFactor = 0.06, // Default width factor
-    this.heightFactor = 0.06, // Default height factor
-    this.color = Colors.white, // Default color
-  }) : super(key: key);
+    this.widthFactor = 0.06, 
+    this.heightFactor = 0.06, 
+    this.color = Colors.white, 
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -153,62 +153,4 @@ class CustomButton extends StatelessWidget {
   }
 }
 
-                    // InkWell(
-                    //   onTap: () {},
-                    //   child: Container(
-                    //     width: screenWidth * 0.06,
-                    //     height: screenHeight * 0.06,
-                    //     decoration: BoxDecoration(
-                    //       color: Colors.grey,
-                    //       borderRadius: BorderRadius.circular(10),
-                    //     ),
-                    //     child: const Center(
-                    //       child: Text('All Hotels'),
-                    //     ),
-                    //   ),
-                    // ),
-                    // Second Button
-                    // InkWell(
-                    //   onTap: () {},
-                    //   child: Container(
-                    //     width: screenWidth * 0.06,
-                    //     height: screenHeight * 0.06,
-                    //     decoration: BoxDecoration(
-                    //       color: Colors.white,
-                    //       borderRadius: BorderRadius.circular(10),
-                    //     ),
-                    //     child: const Center(
-                    //       child: Text('Popular Hotels'),
-                    //     ),
-                    //   ),
-                    // ),
-
-                    // InkWell(
-                    //   onTap: () {},
-                    //   child: Container(
-                    //     width: screenWidth * 0.06,
-                    //     height: screenHeight * 0.06,
-                    //     decoration: BoxDecoration(
-                    //       color: Colors.white,
-                    //       borderRadius: BorderRadius.circular(10),
-                    //     ),
-                    //     child: const Center(
-                    //       child: Text('Nearby Hotels'),
-                    //     ),
-                    //   ),
-                    // ),
-
-                    // InkWell(
-                    //   onTap: () {},
-                    //   child: Container(
-                    //     width: screenWidth * 0.06,
-                    //     height: screenHeight * 0.06,
-                    //     decoration: BoxDecoration(
-                    //       color: Colors.white,
-                    //       borderRadius: BorderRadius.circular(10),
-                    //     ),
-                    //     child: const Center(
-                    //       child: Text('Top Rated'),
-                    //     ),
-                    //   ),
-                    // ),
+                  

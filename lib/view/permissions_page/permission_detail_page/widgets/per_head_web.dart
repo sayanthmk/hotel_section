@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:hotel_admin/controller/data_service.dart/admin_data_service.dart';
 import 'package:hotel_admin/model/hotel_model.dart';
 import 'package:hotel_admin/view/permissions_page/permission_detail_page/widgets/approval_button.dart';
+import 'package:hotel_admin/view/permissions_page/permission_detail_page/widgets/snackbars.dart';
 import 'package:provider/provider.dart';
 
-class PermissionHeaderSection extends StatelessWidget {
+class PermissionHeaderSectionWeb extends StatelessWidget {
   final HotelModel? hotel;
-  const PermissionHeaderSection({super.key, required this.hotel});
+  const PermissionHeaderSectionWeb({super.key, required this.hotel});
 
   @override
   Widget build(BuildContext context) {
@@ -74,27 +75,15 @@ class PermissionHeaderSection extends StatelessWidget {
                   onPressed: () async {
                     try {
                       await hotelProvider.approveHotel(hotel!);
+                      // ignore: use_build_context_synchronously
+                      Navigator.pop(context);
 
-                      if (context.mounted) {
-                        Navigator.pop(context);
-
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text('Hotel approved successfully!'),
-                            backgroundColor: Colors.green,
-                          ),
-                        );
-                      }
+                      const SuccessSnackBar(
+                          message: 'Hotel approved successfully!');
                     } catch (e) {
-                      if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text(
-                                'Failed to approve hotel. Please try again.'),
-                            backgroundColor: Colors.red,
-                          ),
-                        );
-                      }
+                      const ErrorSnackBar(
+                          message:
+                              'Failed to approve hotel. Please try again.');
                     }
                   },
                   icon: Icons.check_rounded,

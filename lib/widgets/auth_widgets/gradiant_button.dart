@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CustomButton extends StatelessWidget {
   final String text;
@@ -39,7 +38,6 @@ class CustomButton extends StatelessWidget {
         height: height,
         width: width,
         decoration: BoxDecoration(
-          // border: Border.all(),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withOpacity(0.2),

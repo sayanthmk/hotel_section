@@ -28,7 +28,6 @@ class CustomHotelStatusChip extends StatelessWidget {
     }
 
     return Container(
-      // padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       width: 50,
       height: 50,
       decoration: BoxDecoration(

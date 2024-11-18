@@ -30,7 +30,7 @@ class CustomFilterButtons extends StatelessWidget {
               children: [
                 Icon(Icons.calendar_view_day_rounded,
                     size: 18, color: Color(0xFF5B6871)),
-                SizedBox(width: 8), // Space between icon and text
+                SizedBox(width: 8), 
                 Text(
                   "Select Date",
                   style: TextStyle(color: Color(0xFF5B6871)),
@@ -54,7 +54,7 @@ class CustomFilterButtons extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(Icons.filter_list, size: 18, color: Color(0xFF5B6871)),
-                SizedBox(width: 8), // Space between icon and text
+                SizedBox(width: 8),
                 Text(
                   "Filters",
                   style: TextStyle(color: Color(0xFF5B6871)),

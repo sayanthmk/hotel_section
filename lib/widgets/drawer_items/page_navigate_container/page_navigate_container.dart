@@ -9,7 +9,6 @@ class PageNavigateContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     final screenWidth = mediaQuery.size.width;
-    // final screenHeight = mediaQuery.size.height;
     return Container(
       width: screenWidth * 0.97,
       height: 50,

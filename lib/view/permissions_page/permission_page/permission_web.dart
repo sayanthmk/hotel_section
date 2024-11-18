@@ -33,7 +33,6 @@ class PermissionsWebSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // _buildWebHeader(context),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -42,82 +41,58 @@ class PermissionsWebSection extends StatelessWidget {
                   child: CustomHotelSearchBar(),
                 ),
                 const SizedBox(width: 20),
-                // buildUserInfo(context),
                 UserInfo(
                   userName: "John Doe",
                   userInitials: "JD",
-                  onNotificationsPressed: () {
-                    // Handle notifications press
-                  },
+                  onNotificationsPressed: () {},
                 ),
               ],
             ),
             const SizedBox(height: 32),
-            // buildHeadingSection(),
             HeadingSection(
               title: 'Permissions List',
-              onAddNewHotelPressed: () {
-                // Handle adding a new hotel
-              },
+              onAddNewHotelPressed: () {},
             ),
             const SizedBox(height: 32),
-            // _buildWebSortSection(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // buildSortButtons(),
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
                   children: [
                     SortButton(
                       text: "All Hotels",
-                      isActive: true, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: true,
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Available",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Occupied",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                     SortButton(
                       text: "Maintenance",
-                      isActive: false, // Example of inactive state
-                      onPressed: () {
-                        // Handle the sort action
-                      },
+                      isActive: false,
+                      onPressed: () {},
                     ),
                   ],
                 ),
-                // buildFilterButtons(),
                 CustomFilterButtons(
-                  onSelectDatePressed: () {
-                    // Handle the Select Date action
-                  },
-                  onFiltersPressed: () {
-                    // Handle the Filters action
-                  },
+                  onSelectDatePressed: () {},
+                  onFiltersPressed: () {},
                 ),
               ],
             ),
             const SizedBox(height: 32),
-            // _buildWebContent(context),
-
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // buildListHeading(),
                 const PermissionListHeading(),
                 const SizedBox(height: 16),
                 ListView.separated(
@@ -128,9 +103,7 @@ class PermissionsWebSection extends StatelessWidget {
                       const SizedBox(height: 8),
                   itemBuilder: (context, index) {
                     HotelModel hotel = hotels[index];
-                    // return _buildWebHotelItem(context, hotel);
                     return InkWell(
-                      // onTap: () => navigateToHotelDetails(context, hotel),
                       onTap: () {
                         Navigator.push(
                           context,

@@ -22,7 +22,6 @@ class FinanceDetails extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Header Section
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
@@ -84,8 +83,6 @@ class FinanceDetails extends StatelessWidget {
               ],
             ),
           ),
-
-          // Details Section
           Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
@@ -111,7 +108,7 @@ class FinanceDetails extends StatelessWidget {
                 _buildDetailRow(
                   context: context,
                   icon: Icons.home_work_rounded,
-                  label: 'Property Type',
+                  label: 'Base Price',
                   value: hotel!.propertySetup,
                   backgroundColor: Colors.green.shade50,
                   iconColor: Colors.green.shade400,
@@ -119,8 +116,6 @@ class FinanceDetails extends StatelessWidget {
               ],
             ),
           ),
-
-          // Footer Note
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
             child: Container(
@@ -186,7 +181,6 @@ class FinanceDetails extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // Icon Container
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
@@ -200,7 +194,6 @@ class FinanceDetails extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 16),
-          // Label and Value
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -223,11 +216,8 @@ class FinanceDetails extends StatelessWidget {
               ],
             ),
           ),
-          // Copy Button
           IconButton(
-            onPressed: () {
-              // Implement copy functionality
-            },
+            onPressed: () {},
             icon: Icon(
               Icons.copy_rounded,
               size: 20,

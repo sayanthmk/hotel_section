@@ -15,17 +15,8 @@ class DashMobileNavBar extends StatelessWidget {
         children: [
           const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Text(
-              //   '',
-              //   style: TextStyle(
-              //     fontSize: 20,
-              //     fontWeight: FontWeight.bold,
-              //   ),
-              // ),
-            ],
+            children: [],
           ),
-          // const SizedBox(height: 16),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -33,9 +24,7 @@ class DashMobileNavBar extends StatelessWidget {
                 return NavItem(
                   title: navItems[index],
                   isActive: index == activeIndex,
-                  onTap: () {
-                    // Add your navigation logic here
-                  },
+                  onTap: () {},
                 );
               }),
             ),

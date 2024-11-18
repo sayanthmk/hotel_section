@@ -2,7 +2,7 @@ import 'dart:developer';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class HotelModel {
-  final String hotelId; // Add the hotelId field
+  final String hotelId;
   final String hotelType;
   final String propertySetup;
   final String hotelName;

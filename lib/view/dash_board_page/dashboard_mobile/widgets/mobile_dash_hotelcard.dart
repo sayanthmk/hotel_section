@@ -23,12 +23,11 @@ class MobileHotelGrid extends StatelessWidget {
             physics: const NeverScrollableScrollPhysics(),
             itemCount: 4,
             itemBuilder: (context, index) {
-              // Sample data for hotels
               return HotelCard(
                 hotelName: 'Hotel ${index + 1}',
                 location: 'Location ${index + 1}',
                 rating: 4.5,
-                price: 200.0 + (index * 50), // Example price variation
+                price: 200.0 + (index * 50),
                 imageUrl: 'https://picsum.photos/200/300?random=$index',
               );
             },

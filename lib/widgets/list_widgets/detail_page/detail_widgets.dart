@@ -83,38 +83,3 @@ class StatusIndicator extends StatelessWidget {
     );
   }
 }
-// class InfoSection extends StatelessWidget {
-//   final List<Widget> children;
-
-//   const InfoSection({
-//     super.key,
-//     required this.children,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       decoration: BoxDecoration(
-//         color: Colors.grey.shade50,
-//         borderRadius: BorderRadius.circular(12),
-//       ),
-//       padding: const EdgeInsets.all(16),
-//       child: Column(
-//         crossAxisAlignment: CrossAxisAlignment.start,
-//         children: children,
-//       ),
-//     );
-//   }
-// }
-
-// class SectionDivider extends StatelessWidget {
-//   const SectionDivider({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Padding(
-//       padding: EdgeInsets.symmetric(vertical: 24),
-//       child: Divider(height: 1),
-//     );
-//   }
-// }

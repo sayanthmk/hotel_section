@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hotel_admin/model/hotel_model.dart';
+import 'package:hotel_admin/view/permissions_page/permission_detail_page/widgets/per_head_mobile.dart';
 import 'package:hotel_admin/widgets/list_widgets/detail_page/contact_details.dart';
-import 'package:hotel_admin/view/permissions_page/permission_detail_page/widgets/detail_approvel_line.dart';
 import 'package:hotel_admin/widgets/list_widgets/detail_page/detail_genaral_info.dart';
 import 'package:hotel_admin/widgets/list_widgets/detail_page/detail_image.dart';
 import 'package:hotel_admin/widgets/list_widgets/detail_page/finance_card.dart';
@@ -17,7 +17,7 @@ class NarrowLayout extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          PermissionHeaderSection(hotel: hotel),
+          PermissionHeaderSectionMobile(hotel: hotel),
           const SizedBox(height: 16),
           GeneralInformation(hotel: hotel),
           const SizedBox(height: 16),
